@@ -24,17 +24,6 @@ a {
   text-decoration: none;
 }
 
-.fp {
-  background-image: url(./images/HG.png);
-  background-color: rebeccapurple;
-  background-position: center;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-}
-
 nav {
   padding: 20px;
   background-color: #0B1D26;
@@ -58,4 +47,49 @@ nav .account {
 nav a {
   margin-left: 20px;
   color: white;
+}
+
+.sec1img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.first__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.first__section div {
+  padding: 50px;
+}
+.first__section .mid_side {
+  position: relative;
+}
+.first__section .mid_side h1 {
+  position: relative;
+}
+.first__section .mid_side h1::before {
+  display: block;
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+  content: "";
+  border-top: 3px solid rgb(226, 171, 43);
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  width: 30px;
 }

@@ -26,16 +26,7 @@ a {
     text-decoration: none;
 }
 
-.fp {
-    background-image: url(./images/HG.png);
-    background-color: rebeccapurple;
-    background-position: center;
-    height: 100vh;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
+
 
 nav {
     padding: 20px;
@@ -57,8 +48,50 @@ nav {
         margin-left: 20px;
         color: white;
     }
+}
 
+.sec1img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
+.first__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+    div {
+        padding: 50px;
+    }
+
+    .mid_side {
+        position: relative;
+
+        h1 {
+            position: relative;
+
+            &::before {
+                display: block;
+                text-align: center;
+                font-size: 4em;
+
+                color: #fff;
+                content: "";
+                border-top: 3px solid rgb(226, 171, 43);
+                position: absolute;
+                left: -10%;
+                top: 50%;
+                width: 30px;
+
+            }
+        }
+
+    }
 
 }
